@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+}
+
+header {
+    overflow: hidden;
+    background-color: #F2F0EF;
+    height: 101px;
+    width: 100vw;
+
+}
+
+.titulo {
+    margin-left: 200px;
+    margin-top: 15px;
+    color: #1a3c2a;
+    font-family: 'Enter';
+    font-size: 55px;
+
+}
+
+.botões {
+    margin-left: 75%;
+    margin-top: -35px;
+
+}
+
+a {
+    padding: 10px;
+    color: #1a3c2a;
+    font-family: 'Enter';
+    text-decoration: none;
+}
+
+a:hover {
+    color: #F2F0EF;
+    background-color: #6fcf97;
+    border-radius: 10px;
+}
+
+.quiz {
+    border: 2px solid #1a3c2a;
+    border-radius: 10px;
+    background-color: #1a3c2a;
+    color: #F2F0EF;
+    font-weight: bold;
+}
+
+.hero {
+    position: relative;
+    height: 500px;
+    background: url('https://cdn.discordapp.com/attachments/1495931022725091413/1496291821528285224/photo-1678755721054-1ce58e85196e.jfif?ex=69e959da&is=69e8085a&hm=955cae08ba9fd3a5e4a54adfde64ff322fb555f543c7eab3512c74fbfe2a670e&') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    padding: 40px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 50, 20, 0.6);
+}
+
+.hero-content {
+    position: relative;
+    max-width: 600px;
+}
+
+.tag {
+    display: inline-block;
+    color: #7ee0b5;
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.tag::before {
+    content: "";
+    display: inline-block;
+    width: 40px;
+    height: 2px;
+    background: #7ee0b5;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.hero h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.hero p {
+    margin: 15px 0;
+    line-height: 1.5;
+    color: #ffffff;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.btn-green {
+    background: #2ecc71;
+    color: black;
+}
+
+.btn-outline {
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+}
+
+.rodape {
+    background-color: #1a3c2a;
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+
+}
+
+
+
+.informacoesdorodape, h3 {
+    font-size: 48px;
+    color: #6fcf97;
+   text-align: center;
+   border-left: 1px solid #e0e0e0;
+ border-right: 1px solid #e0e0e0;
+}
+.teste {
+    font-size: 13px;
+    font-family: 'Enter';
+    
+}
