@@ -201,3 +201,74 @@ h3 {
     height: 100%;
    padding: 0px 0px 0px 400px
 }
+.btn-historico{
+    background: transparent;
+    border: 1px solid #1a3c2a;
+    color: #1a3c2a;
+}
+.destaques{
+    display: inline-block;
+    color: #7ee0b5;
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: relative;
+}
+.destaques::before {
+    content: "";
+    display: inline-block;
+    width: 40px;
+    height: 2px;
+    background: #7ee0b5;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+.destaques::after {
+    content: "";
+    display: inline-block;
+    width: 40px;
+    height: 2px;
+    background: #7ee0b5;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+.dimensoes{
+    background-color: #F0F7F2;
+    width: 1528px;
+    height: 692.48px;
+    padding: 80px 188px 0px 188px;
+}
+.teste3 h2{
+    color: #1a3c2a;
+    font-family: 'Inter';
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 42px;
+}
+.teste3{
+    text-align: center;
+}
+.container-layout img{
+    width: 366px;
+    height: 192px;
+    object-fit: cover;
+    object-position: center;
+}
+.container-layout{
+    width: 368px;
+    height: 413.69px;
+    border-radius: 4px;
+    border: 1px solid #f3f4f6;
+    padding: 118.8px;
+}
+.container-layout h3{
+    width: 178px;
+    height: 26px;
+    padding: -2px;
+    color: #1a3c2a;
+    font-family: 'Inter';
+    font-size: 16.8px;
+    line-height: 25.2px;
+}
+
