@@ -176,39 +176,6 @@ h3 {
     vertical-align: middle;
 }
 
-.sobre {
-    display: flex;
-    padding: 80px 188px 80px 188px;
-    justify-content: space-between;
-    width: 1152px;
-    height: 416px;
-    justify-items: center;
-}
-
-.arvore {
-    width: 544px;
-    height: 416px;
-}
-
-.teste2 {
-    width: 544px;
-    height: 416px;
-    line-height: 29px;
-
-}
-
-.arvore img {
-    width: 100%;
-    height: 100%;
-    padding: 0px 0px 0px 400px
-}
-
-.btn-historico {
-    background: transparent;
-    border: 1px solid #1a3c2a;
-    color: #1a3c2a;
-}
-
 .destaques {
     display: inline-block;
     color: #7ee0b5;
@@ -242,7 +209,10 @@ h3 {
 .dimensoes {
     background-color: #F0F7F2;
     height: 692.48px;
-    padding: 80px 188px 80px 188px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
 }
 
 .teste3 h2 {
@@ -254,7 +224,10 @@ h3 {
 }
 
 .teste3 {
+    justify-content: center;
     text-align: center;
+    width: 1152px;
+    
 }
 
 .container-layout img {
@@ -280,6 +253,23 @@ h3 {
 
 .card-img {
     overflow: hidden;
+    width: 366px;
+    height: 192px;
+    margin-top: 48px;
+}
+
+.card-img img{
+    height: 100%;
+    width: 100%;
+    
+}
+
+.card p {
+    margin-top: 12px;
+}
+
+.card h3{
+    margin-top: 60px;
 }
 
 .carrossel {
@@ -308,21 +298,31 @@ h3 {
     font-size: 16.8px;
     line-height: 25.2px;
 }
-.conhecimento{
+
+.margem{
     display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 24px;
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 16px 0;
+    height: 210px;
+    align-items: center;
+    justify-content: center;
 }
+
+.conhecimento{
+  width: 896px;
+  height: 80px;
+  display: flex;
+
+}
+
 .testecon{
     color: #1a3c2a;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
-    margin-bottom: 80px;
+    margin-left: 20px;
+    margin-right: 32px;
+    width: 640px;
+   
 }
+
 .testecon p{
     color: #6a7282;
     font-family: Arial, Helvetica, sans-serif;
@@ -337,9 +337,8 @@ h3 {
     height: 45px;
     font-family: Arial, Helvetica, sans-serif;
 }
-.margem{
-    margin-top: 40px;
-}
+
+
 .container-footer{
     display: flex;
     justify-content: space-between;
@@ -405,4 +404,71 @@ h3 {
     margin-right: 198px;
     width: 246px;
     height: 223px;
+}
+
+.div-img{
+  position: absolute;
+  top: 357px;          /* Alinha ao topo */
+  left: -16px;         /* Alinha à esquerda */
+  width: 208px;     /* Cobre toda a largura */
+  height: 84px;    /* Cobre toda a altura */
+  
+  /* Estilo visual */
+  background-color: #1A3C2A; /* Preto com 50% de transparência */
+  color: white;
+  display: flex;
+  justify-content: center; /* Centraliza o texto horizontalmente */
+  align-items: start;     /* Centraliza o texto verticalmente */
+  flex-direction: column;
+}
+
+.div-img h1{
+    color: #6FCF97;
+    margin-left: 10px;
+}
+
+.div-img p{
+    color: #889e93;
+    margin-left: 10px;
+}
+
+.sobre {
+    display: flex;
+    width: 100%;
+    height: 575px;
+    justify-content: center;
+    
+}
+
+.container-sobre{
+    display: flex;
+    width: 1152px;
+    height: 415px;
+    margin-top: 80px;
+    gap: 64px;
+}
+
+.arvore {
+    width: 544px;
+    height: 416px;
+    position: relative;
+    
+}
+
+.teste2 {
+    width: 544px;
+    height: 416px;
+    line-height: 29px;
+}
+
+.arvore img {
+    width: 100%;
+    height: 100%;
+   
+}
+
+.btn-historico {
+    background: transparent;
+    border: 1px solid #1a3c2a;
+    color: #1a3c2a;
 }
