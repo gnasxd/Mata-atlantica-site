@@ -286,3 +286,222 @@ a:hover {
  height: 122px;
  margin-left: 3.1%;
 }
+
+.container-acoes-curso{
+    display: flex;
+    width: 100%;
+    height: 771px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.senfo-feito{
+    display: flex;
+    width: 1024px;
+    height: 604px;
+    margin-top: 80px;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+.acoes-curso{
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 500px;
+    height: 100%;
+    margin-right: 64px;
+    
+}
+
+
+.acoes-curso h1{
+    color: #1A3C2A;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    margin-top: 16px;
+}
+
+.acoes-curso p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: #4A5565;
+    line-height: 29px;
+    margin-bottom: 24px;
+    margin-top: 45px;
+    
+}
+
+.acoes-curso img{
+    width: 100%;
+    height: 62%;
+}
+
+.areas-caixas{
+    display: flex;
+    width: 544px;
+    height: 130px;
+    margin-bottom: 15px;
+}
+
+.internas{
+ display: flex;
+ gap: 16px;
+ align-items: center;
+ padding: 25px;
+ 
+}
+
+.caixas-internas{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.caixas-internas h1{
+margin-bottom: 7px;
+color: #1A3C2A;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 15px;
+}
+
+.caixas-internas p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: #6A7282;
+    
+}
+
+.alto{
+    
+  position: absolute;
+  top: 0px;          /* Alinha ao topo */
+  right: 0px;         /* Alinha à esquerda */
+  height: 21px;    /* Cobre toda a altura */
+  
+  /* Estilo visual */
+  background-color: #F0F7F2; /* Preto com 50% de transparência */
+  display: flex;
+  justify-content: center; /* Centraliza o texto horizontalmente */
+  align-items: center;     /* Centraliza o texto verticalmente */
+  flex-direction: column;
+}
+
+
+.alto p {
+    color: #1A3C2A;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+
+.margem{
+    display: flex;
+    height: 210px;
+    align-items: center;
+    justify-content: center;
+}
+
+.conhecimento{
+  width: 896px;
+  height: 80px;
+  display: flex;
+
+}
+
+.testecon{
+    color: #1a3c2a;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    margin-left: 20px;
+    margin-right: 32px;
+    width: 640px;
+   
+}
+
+.testecon p{
+    color: #6a7282;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 24.5px;
+}
+.btn-btn-quiz{
+    background-color: #1a3c2a;
+    border: 1px solid #1a3c2a;
+    color: #ffffff;
+    width: 156px;
+    height: 45px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.container-footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 0;
+    background-color: #0f2318;
+    height: 100%;
+    margin: 0 auto;
+    gap: 40px;
+}
+.icone-footer h2{
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 19px;
+}
+.icone-footer p{
+    color:#889e93;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 26px;
+}
+.icone-footer{
+    width: 532px;
+    height: 223px;
+    margin-left: 212px;
+}
+.navegacao-footer h2{
+    color: #fff;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 16px;
+   margin-bottom: 8px;
+}
+.navegacao-footer a{
+    color: #889e93;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+.navegacao-footer li{
+    list-style: none;
+   margin-bottom: 8px;
+   padding: 4px;
+}
+.navegacao-footer{
+    width: 246px;
+    height: 223px;
+}
+.links h2{
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+.links a{
+    color: #889e93;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+.links li{
+    list-style: none;
+    margin-bottom: 8px;
+    padding: 4px;
+}
+.links{
+    margin-right: 198px;
+    width: 246px;
+    height: 223px;
+}
