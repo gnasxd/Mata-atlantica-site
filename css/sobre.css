@@ -204,3 +204,85 @@ a:hover {
     color: #6FCF97;
     font-size: 13px;
 }
+
+.linha-tempo{
+    display: flex;
+    width: 100%;
+    height: 1106px;
+    align-items: center;
+    justify-content: center;
+    background-color: #F0F7F2;
+}
+
+
+.linha{
+    display: flex;
+    width: 1280px;
+    height: 937px;
+    margin-top: 80px;
+    margin-bottom: 88px;
+    flex-direction: column;
+    align-items: flex-start; 
+    justify-content: flex-start;
+}
+
+.tempo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.linha > h1{
+    margin-bottom: 48px;
+    margin-top: 12px;
+    color: #1A3C2A
+    
+}
+
+.caixas{
+    display: flex;
+    width: 100%;
+    height: 122px;
+    margin-bottom: 32px;
+    gap: 32px;
+}
+
+
+.span-caixas{
+    color: #1A3C2A;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.caixas > div > p{
+    line-height: 25px;
+    color: #6A7282;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.ponto{
+ border-left: 1px solid #6FCF97;
+ height: 155px;
+
+}
+
+.ponto1{
+ border-left: 1px solid #6FCF97;
+ height: 155px;
+ margin-left: 3.1%;
+
+}
+
+.ponto4{
+ border-left: 1px solid #6FCF97;
+ height: 155px;
+ margin-left: 3.1%;
+ 
+}
+.ponto5{
+ border-left: 1px solid #6FCF97;
+ height: 122px;
+ margin-left: 3.1%;
+}
