@@ -25,14 +25,14 @@ header {
 
 }
 
-a {
+.NavBotao{
     padding: 10px;
     color: #1a3c2a;
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
 }
 
-a:hover {
+ .NavBotao:hover {
     color: #F2F0EF;
     background-color: #6fcf97;
     border-radius: 10px;
@@ -44,6 +44,8 @@ a:hover {
     background-color: #1a3c2a;
     color: #F2F0EF;
     font-weight: bold;
+    padding: 10px;
+    text-decoration: none;
 }
 
 .capa{
@@ -56,8 +58,11 @@ a:hover {
 }
 
 .div-capa{ 
-   margin-top: 156px;
-   margin-right: 372px;
+   margin-top: 13%;
+   margin-bottom: 60px;
+   margin-left: -45%;
+   z-index: 2;
+   
 }
 
 
@@ -157,7 +162,7 @@ a:hover {
     height: 361px;
     align-items: center;
     justify-content: center;
-    
+    background: url('../img/Arvores_cortadas.png') center/cover no-repeat;
 }
 
 .overlay {
@@ -195,6 +200,8 @@ a:hover {
 
 .hero p{
     font-size: 28px;
+    color: #fff;
+    z-index: 2;
 
 }
 
@@ -436,9 +443,8 @@ font-size: 15px;
     width: 156px;
     height: 45px;
     font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
 }
-
-
 .container-footer{
     display: flex;
     justify-content: space-between;
@@ -447,6 +453,7 @@ font-size: 15px;
     height: 100%;
     margin: 0 auto;
     gap: 40px;
+
 }
 .icone-footer h2{
     color: #fff;
@@ -474,6 +481,7 @@ font-size: 15px;
     color: #889e93;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
+    text-decoration: none;
 }
 .navegacao-footer li{
     list-style: none;
@@ -494,6 +502,7 @@ font-size: 15px;
     color: #889e93;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
+    text-decoration: none;
 }
 .links li{
     list-style: none;
@@ -504,4 +513,20 @@ font-size: 15px;
     margin-right: 198px;
     width: 246px;
     height: 223px;
-} 
+}
+
+
+.icone-img{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+
+.capa{
+    position: relative;
+    height: 100%;
+    background: url('../img/Sobre.png') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+}
