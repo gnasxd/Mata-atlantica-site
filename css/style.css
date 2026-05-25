@@ -25,14 +25,14 @@ header {
 
 }
 
-a {
+.NavBotao{
     padding: 10px;
     color: #1a3c2a;
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
 }
 
-a:hover {
+ .NavBotao:hover {
     color: #F2F0EF;
     background-color: #6fcf97;
     border-radius: 10px;
@@ -44,6 +44,8 @@ a:hover {
     background-color: #1a3c2a;
     color: #F2F0EF;
     font-weight: bold;
+    padding: 10px;
+    text-decoration: none;
 }
 
 .hero {
@@ -109,14 +111,27 @@ a:hover {
     cursor: pointer;
 }
 .btn-green {
-    background: #2ecc71;
-    color: black;
+    background-color: #143021;
+    color: white;
+    border: 1px solid #143021;
 }
 
 .btn-outline {
-    background: transparent;
-    border: 1px solid white;
+   background-color: #143021;
     color: white;
+    border: 1px solid #143021;
+}
+.btn-green:hover {
+    background-color: #2ecc71; 
+    color: black;
+   
+}
+
+/* O efeito hover para o botão vazado (outline) */
+.btn-outline:hover {
+    background-color: #2ecc71; /* Preenche o fundo com verde claro */
+    border-color: #2ecc71;     /* Faz a borda acompanhar a cor do fundo */
+    color: #1a3c2a;            /* Escurece o texto para dar contraste */
 }
 
 .rodape {
@@ -240,7 +255,7 @@ h3 {
 }
 .card {
     width: 368px;
-    height: 413.69px;
+    height: 470px;
     background-color: #fff;
     border-radius: 8px;
 }
@@ -330,8 +345,8 @@ h3 {
     width: 156px;
     height: 45px;
     font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
 }
-
 
 .container-footer{
     display: flex;
@@ -341,6 +356,7 @@ h3 {
     height: 100%;
     margin: 0 auto;
     gap: 40px;
+
 }
 .icone-footer h2{
     color: #fff;
@@ -368,6 +384,7 @@ h3 {
     color: #889e93;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
+    text-decoration: none;
 }
 .navegacao-footer li{
     list-style: none;
@@ -388,6 +405,7 @@ h3 {
     color: #889e93;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
+    text-decoration: none;
 }
 .links li{
     list-style: none;
@@ -465,4 +483,50 @@ h3 {
     background: transparent;
     border: 1px solid #1a3c2a;
     color: #1a3c2a;
+}
+
+.icone-img{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+
+
+
+.btn-historico {
+    position: relative;        
+    display: inline-block;
+    padding: 12px 24px;
+    border: 2px solid #1a3c2a; 
+    background-color: white;   
+    color: #1a3c2a;            
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    overflow: hidden;          
+    z-index: 1;                
+    transition: color 0.4s ease; 
+    margin-top: 5px;
+}
+
+.btn-historico::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;                 
+    height: 100%;
+    background-color: #1a3c2a; 
+    z-index: -1;               
+    transition: width 0.4s ease; 
+}
+
+.btn-historico:hover::before {
+    width: 100%;              
+}
+
+.btn-historico:hover {
+    color: white;              
 }
