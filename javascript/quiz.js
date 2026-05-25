@@ -9,84 +9,84 @@ const questions = [
         ],
     },
  {
-        question: "Qual a porcentagem aproximada da Mata Atlântica original que ainda resta?",
+        question: "Quantos estados brasileiros a Mata Atlântica abrange?",
         respostas: [
-            { id: 1, resposta: "50%", correct: false },
-            { id: 2, resposta: "30%", correct: false },
-            { id: 3, resposta: "12,4%", correct: true },
-            { id: 4, resposta: "5%", correct: false }
+            { id: 1, resposta: "10", correct: false },
+            { id: 2, resposta: "13", correct: false },
+            { id: 3, resposta: "15", correct: false },
+            { id: 4, resposta: "17", correct: true }    
         ],
     },
     {
-        question: "Qual a porcentagem aproximada da Mata Atlântica original que ainda resta?",
+        question: "Qual animal é considerado o símbolo da Mata Atlântica?",
         respostas: [
-            { id: 1, resposta: "50%", correct: false },
-            { id: 2, resposta: "30%", correct: false },
-            { id: 3, resposta: "12,4%", correct: true },
-            { id: 4, resposta: "5%", correct: false }
+            { id: 1, resposta: "Arara-azul", correct: false },
+            { id: 2, resposta: "Mico-leão-dourado", correct: true },
+            { id: 3, resposta: "Tamanduá-bandeira", correct: false },
+            { id: 4, resposta: "Onça-pintada", correct: false }
         ],
     },
     {
-        question: "Qual a porcentagem aproximada da Mata Atlântica original que ainda resta?",
+        question: "Em que ano foi aprovado a Lei da Mata Atlântica no Brasil?",
         respostas: [
-            { id: 1, resposta: "50%", correct: false },
-            { id: 2, resposta: "30%", correct: false },
-            { id: 3, resposta: "12,4%", correct: true },
-            { id: 4, resposta: "5%", correct: false }
+            { id: 1, resposta: "1988", correct: false },
+            { id: 2, resposta: "2000", correct: false },
+            { id: 3, resposta: "2006", correct: true },
+            { id: 4, resposta: "2012", correct: false }
         ],
     },
     {
-        question: "Qual a porcentagem aproximada da Mata Atlântica original que ainda resta?",
+        question: "Aproximadamente quantas espécies de plantas são encontradas na Mata Atlântica?",
         respostas: [
-            { id: 1, resposta: "50%", correct: false },
-            { id: 2, resposta: "30%", correct: false },
-            { id: 3, resposta: "12,4%", correct: true },
-            { id: 4, resposta: "5%", correct: false }
+            { id: 1, resposta: "20.000", correct: true },
+            { id: 2, resposta: "10.000", correct: false },
+            { id: 3, resposta: "5.000", correct: false },
+            { id: 4, resposta: "15.000", correct: false }
         ],
     },
     {
-        question: "Qual a porcentagem aproximada da Mata Atlântica original que ainda resta?",
+        question: "Quantas pessoas dependem da Mata Atlântica para abastecimento de água?",
         respostas: [
-            { id: 1, resposta: "50%", correct: false },
-            { id: 2, resposta: "30%", correct: false },
-            { id: 3, resposta: "12,4%", correct: true },
-            { id: 4, resposta: "5%", correct: false }
+            { id: 1, resposta: "50 milhões", correct: false },
+            { id: 2, resposta: "80 milhões", correct: false },
+            { id: 3, resposta: "100 milhões", correct: false },
+            { id: 4, resposta: "120 milhões", correct: true }
         ],
     },
     {
-        question: "Qual a porcentagem aproximada da Mata Atlântica original que ainda resta?",
+        question: "O que é uma especie endêmica?",
         respostas: [
-            { id: 1, resposta: "50%", correct: false },
-            { id: 2, resposta: "30%", correct: false },
-            { id: 3, resposta: "12,4%", correct: true },
-            { id: 4, resposta: "5%", correct: false }
+            { id: 1, resposta: "Espécie que migra entre biomas", correct: false },
+            { id: 2, resposta: "Espécie encontrada em uma região específica", correct: true },
+            { id: 3, resposta: "Espécie que está em perigo de extinção", correct: false },
+            { id: 4, resposta: "Espécie invasora", correct: false }
         ],
     },
     {
-        question: "Qual a porcentagem aproximada da Mata Atlântica original que ainda resta?",
+        question: "Qual ciclo econômico causou grande destruição da Mata Atlântica no período colonial?",
         respostas: [
-            { id: 1, resposta: "50%", correct: false },
-            { id: 2, resposta: "30%", correct: false },
-            { id: 3, resposta: "12,4%", correct: true },
-            { id: 4, resposta: "5%", correct: false }
+            { id: 1, resposta: "Ciclo do ouro", correct: false },
+            { id: 2, resposta: "Ciclo da borracha", correct: false },
+            { id: 3, resposta: "Ciclo do pau-brasil", correct: true },
+            { id: 4, resposta: "Ciclo do algodão", correct: false }
         ],
     },
     {
-        question: "Qual a porcentagem aproximada da Mata Atlântica original que ainda resta?",
+        question: "A Mata Atlântica é considerada um hotspot de biodiversidade. Quantos hotspots existem no mundo?",
         respostas: [
-            { id: 1, resposta: "50%", correct: false },
-            { id: 2, resposta: "30%", correct: false },
-            { id: 3, resposta: "12,4%", correct: true },
-            { id: 4, resposta: "5%", correct: false }
+            { id: 1, resposta: "10", correct: false },
+            { id: 2, resposta: "20", correct: false },
+            { id: 3, resposta: "34", correct: true },
+            { id: 4, resposta: "50", correct: false }
         ],
     },
     {
-        question: "Qual a porcentagem aproximada da Mata Atlântica original que ainda resta?",
+        question: "O que são corredores ecológicos?",
         respostas: [
-            { id: 1, resposta: "50%", correct: false },
-            { id: 2, resposta: "30%", correct: false },
-            { id: 3, resposta: "12,4%", correct: true },
-            { id: 4, resposta: "5%", correct: false }
+            { id: 1, resposta: "Trilha para turismo ecológico", correct: false },
+            { id: 2, resposta: "Faixas de vegetações que conectam fragmentos florestais", correct: true },
+            { id: 3, resposta: "Rios que atravessam a floresta", correct: false },
+            { id: 4, resposta: "Estradas dentro de parques nacionais", correct: false }
         ],
     },
 ]
@@ -140,8 +140,21 @@ function selectAnswer(e) {
         selectedButton.classList.add("incorrect")
     }
     Array.from(answerButtons.children).forEach((button) => {
+        if (button.dataset.id == correctAnswer.id) {
+            button.classList.add("correct");
+        }
         button.disabled = true;
+        const explicacao = document.createElement("p");
+        explicacao.classList.add("explicacao");
+        if (isCorrect) {
+            explicacao.innerHTML = "Resposta correta!";
+        } else {
+            explicacao.innerHTML = "Resposta incorreta! A resposta correta é: " + correctAnswer.resposta;
+        }
+        answerButtons.appendChild(explicacao);
     });
+
+
     nextButton.style.display = "block";
 }
 function showScore() {
