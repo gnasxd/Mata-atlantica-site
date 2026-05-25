@@ -11,7 +11,8 @@ header {
 }
 
 .titulo {
-    margin-left: 2%;
+    margin-left: 200px;
+    margin-top: 15px;
     color: #1a3c2a;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 55px;
@@ -21,16 +22,17 @@ header {
 .botões {
     margin-left: 75%;
     margin-top: -35px;
+
 }
 
-a {
+.NavBotao{
     padding: 10px;
     color: #1a3c2a;
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
 }
 
-a:hover {
+ .NavBotao:hover {
     color: #F2F0EF;
     background-color: #6fcf97;
     border-radius: 10px;
@@ -42,8 +44,9 @@ a:hover {
     background-color: #1a3c2a;
     color: #F2F0EF;
     font-weight: bold;
+    padding: 10px;
+    text-decoration: none;
 }
-
 
 
 .container-footer{
@@ -54,6 +57,7 @@ a:hover {
     height: 100%;
     margin: 0 auto;
     gap: 40px;
+
 }
 .icone-footer h2{
     color: #fff;
@@ -81,6 +85,7 @@ a:hover {
     color: #889e93;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
+    text-decoration: none;
 }
 .navegacao-footer li{
     list-style: none;
@@ -101,6 +106,7 @@ a:hover {
     color: #889e93;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
+    text-decoration: none;
 }
 .links li{
     list-style: none;
@@ -111,4 +117,4 @@ a:hover {
     margin-right: 198px;
     width: 246px;
     height: 223px;
-} 
+}
