@@ -3,21 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mata Atlântida</title>
+    <title>Mata Atlântica</title>
     <link rel="stylesheet" href="css/quiz.css">
-    <script src = "javascript/quiz.js" defer></script>
+    <script src="javascript/quiz.js" defer></script>
 </head>
 <body>
     <header>
         <h1 class="titulo">Mata Atlântica</h1>
-        <Div class="botões">
-            <ul>
-               <a class="NavBotao" href="home.html">Início</a>
-                <a class="NavBotao" href="sobre.html">sobre</a>
-                <a class="quiz" href="quiz.html">QUIZ</a>
-            </ul>
-        </Div>
+
+        <button class="menu-hamburguer" id="menuBtn" aria-label="Abrir menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <div class="botões" id="menuNav">
+            <a class="NavBotao" href="home.html">Início</a>
+            <a class="NavBotao" href="sobre.html">sobre</a>
+            <a class="quiz" href="quiz.html">QUIZ</a>
+        </div>
     </header>
+
     <main>
         <div class="app">
             <div class="questao">
@@ -25,7 +31,7 @@
                 <h1>QUESTÃO</h1>
             </div>
             <div class="quiz1">
-                <h2 id="questões">questões vão aqui </h2>
+                <h2 id="questões">questões vão aqui</h2>
                 <div id="botões-resposta">
                     <button class="btn-quiz1">resposta 1</button>
                     <button class="btn-quiz1">resposta 2</button>
@@ -34,49 +40,49 @@
                 </div>
                 <button id="next-btn">Próxima Pergunta</button>
             </div>
-
         </div>
     </main>
+
     <footer>
         <div class="container-footer">
-
             <div class="icone-footer">
                 <div class="icone">
                     <div class="icone-img">
                         <img src="img/folha.png">
-                        <h2>Mata Atlântica </h2><br>
+                        <h2>Mata Atlântica</h2>
                     </div>
                     <p>Portal educativo dedicado a conscientização ambiental e promoção da conservação da Mata
                         Atlântica. Com o objetivo de promover práticas sustentáveis.</p>
                     <div class="icone-mata-atlantica">
-                        <p> <br> Brasil — Domínio da Mata Atlântica</p>
+                        <p><br>Brasil — Domínio da Mata Atlântica</p>
                     </div>
                 </div>
             </div>
-
             <div class="navegacao-footer">
                 <br>
                 <h2>Navegação</h2><br>
-
                 <li><a href="home.html">Início</a></li>
                 <li><a href="sobre.html">Sobre</a></li>
-                <li><a class="" href="quiz.html">Quiz</a></li>
-
+                <li><a href="quiz.html">Quiz</a></li>
             </div>
-
             <div class="links">
                 <br>
-                <h2>Links Institucionais</h2> <br>
+                <h2>Links Institucionais</h2><br>
                 <li><a href="https://www.sosma.org.br/">SOSMA - SOS Mata Atlântica</a></li>
                 <li><a href="https://www.ibama.gov.br/">IBAMA</a></li>
-                <li><a
-                        href="https://www.nature.org/pt-br/where-we-work/americas/brazil/areas-we-protect/mata-atlantica/">MMA
-                        — Meio Ambiente</a></li>
-                <li><a href="https://www.wwf.org.br/natureza_brasileira/areas_prioritarias/mata_atlantica/">WWF
-                        Brasil</a></li>
+                <li><a href="https://www.nature.org/pt-br/where-we-work/americas/brazil/areas-we-protect/mata-atlantica/">MMA — Meio Ambiente</a></li>
+                <li><a href="https://www.wwf.org.br/natureza_brasileira/areas_prioritarias/mata_atlantica/">WWF Brasil</a></li>
             </div>
         </div>
     </footer>
-</body>
 
+    <script>
+        const btn = document.getElementById('menuBtn');
+        const nav = document.getElementById('menuNav');
+        btn.addEventListener('click', () => {
+            btn.classList.toggle('ativo');
+            nav.classList.toggle('aberto');
+        });
+    </script>
+</body>
 </html>

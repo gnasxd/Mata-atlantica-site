@@ -1,38 +1,50 @@
 * {
     margin: 0;
+    box-sizing: border-box;
 }
 
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+    background-color: #fff;
+}
+
+/* =====================
+   HEADER
+===================== */
 header {
-    overflow: hidden;
     background-color: #F2F0EF;
     height: 100px;
     width: 100%;
-
+    overflow: visible;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    position: relative;
 }
 
 .titulo {
-    margin-left: 200px;
-    margin-top: 15px;
     color: #1a3c2a;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 55px;
-
+    margin: 0;
 }
 
 .botões {
-    margin-left: 75%;
-    margin-top: -35px;
-
+    display: flex;
+    align-items: center;
+    gap: 4px;
 }
 
-.NavBotao{
+.NavBotao {
     padding: 10px;
     color: #1a3c2a;
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
 }
 
- .NavBotao:hover {
+.NavBotao:hover {
     color: #F2F0EF;
     background-color: #6fcf97;
     border-radius: 10px;
@@ -48,100 +60,54 @@ header {
     text-decoration: none;
 }
 
+/* Hamburguer escondido no desktop */
+.menu-hamburguer {
+    display: none;
+}
 
-.container-footer{
-    display: flex;
-    justify-content: space-between;
-    padding: 16px 0;
-    background-color: #0f2318;
-    height: 100%;
-    margin: 0 auto;
-    gap: 40px;
+.menu-hamburguer span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #1a3c2a;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
 
+.menu-hamburguer.ativo span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
 }
-.icone-footer h2{
-    color: #fff;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 19px;
+.menu-hamburguer.ativo span:nth-child(2) {
+    opacity: 0;
 }
-.icone-footer p{
-    color:#889e93;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    line-height: 26px;
+.menu-hamburguer.ativo span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
 }
-.icone-footer{
-    width: 532px;
-    height: 223px;
-    margin-left: 212px;
-}
-.navegacao-footer h2{
-    color: #fff;
-   font-family: Arial, Helvetica, sans-serif;
-   font-size: 16px;
-   margin-bottom: 8px;
-}
-.navegacao-footer a{
-    color: #889e93;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    text-decoration: none;
-}
-.navegacao-footer li{
-    list-style: none;
-   margin-bottom: 8px;
-   padding: 4px;
-}
-.navegacao-footer{
-    width: 246px;
-    height: 223px;
-}
-.links h2{
-    color: #fff;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    margin-bottom: 8px;
-}
-.links a{
-    color: #889e93;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    text-decoration: none;
-}
-.links li{
-    list-style: none;
-    margin-bottom: 8px;
-    padding: 4px;
-}
-.links{
-    margin-right: 198px;
-    width: 246px;
-    height: 223px;
-} 
-.app{
+
+/* =====================
+   QUIZ
+===================== */
+.app {
     margin: 100px auto;
     width: 90%;
     max-width: 600px;
     padding: 60px 0 100px 0;
     border-radius: 10px;
-
 }
 
-.quiz1{
-
+.quiz1 {
     padding: 20px 0;
 }
 
-.quiz1 h2{
-   font-size: 16px;
-   font-family: Arial, Helvetica, sans-serif;
-   width: 619px;
-   height: 27px;
-   font-weight: 700;
-   font-style: bold;
-   color: #1a3c2a;
-   line-height: 16px;
-   }
+.quiz1 h2 {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    font-weight: 700;
+    color: #1a3c2a;
+    line-height: 1.5;
+}
+
 .btn-quiz1 {
     background: #fff;
     font-weight: 500;
@@ -152,16 +118,19 @@ header {
     text-align: left;
     border-radius: 4px;
     cursor: pointer;
-    transition: all - 0.3s;
     color: #1a3c2a;
+    font-family: Arial, Helvetica, sans-serif;
 }
+
 .btn-quiz1:hover {
-    background:#cdf8e1;
+    background: #cdf8e1;
     color: #1a3c2a;
 }
+
 .btn-quiz1:disabled {
     cursor: no-drop;
 }
+
 #next-btn {
     background: #1a3c2a;
     color: #fff;
@@ -172,42 +141,223 @@ header {
     margin: 20px auto 0;
     border-radius: 4px;
     cursor: pointer;
-    transition: all - 0.3s;
     display: none;
+    font-family: Arial, Helvetica, sans-serif;
 }
-.correct{
+
+.correct {
     background: #c4f3da;
 }
-.incorrect{
+
+.incorrect {
     background: #f8c1c1;
 }
+
 .questao {
     display: flex;
     gap: 5px;
+    align-items: center;
 }
-.questao  span{
+
+.questao span {
     width: 24px;
     height: 24px;
     border-radius: 4px;
-    margin-top: 7px;
-    border-color: #1a3c2a;
-    border-width: 1px;
-    border-style: solid;
+    border: 1px solid #1a3c2a;
     text-align: center;
     font-size: 18px;
     padding: 2px;
     background-color: #1a3c2a;
     color: #fff;
+    flex-shrink: 0;
 }
-.questao h1{
+
+.questao h1 {
     font-size: 10.88px;
     font-weight: 600;
-    margin-top: 15px;
     font-family: Arial, Helvetica, sans-serif;
     color: #99A1AF;
     line-height: 18px;
     letter-spacing: 1.09px;
 }
-body{
-    background-color: #fff;;
+
+/* =====================
+   FOOTER
+===================== */
+.container-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 0;
+    background-color: #0f2318;
+    height: 100%;
+    margin: 0 auto;
+    gap: 40px;
+}
+
+.icone-footer h2 {
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 19px;
+}
+
+.icone-footer p {
+    color: #889e93;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 26px;
+}
+
+.icone-footer {
+    width: 532px;
+    height: 223px;
+    margin-left: 212px;
+}
+
+.icone-img {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+
+.navegacao-footer h2 {
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.navegacao-footer a {
+    color: #889e93;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.navegacao-footer li {
+    list-style: none;
+    margin-bottom: 8px;
+    padding: 4px;
+}
+
+.navegacao-footer {
+    width: 246px;
+    height: 223px;
+}
+
+.links h2 {
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.links a {
+    color: #889e93;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.links li {
+    list-style: none;
+    margin-bottom: 8px;
+    padding: 4px;
+}
+
+.links {
+    margin-right: 198px;
+    width: 246px;
+    height: 223px;
+}
+
+/* =====================
+   MEDIA QUERY — MOBILE
+===================== */
+@media screen and (max-width: 1200px) {
+
+    /* Header */
+    header {
+        padding: 12px 16px;
+        height: auto;
+    }
+
+    .titulo {
+        font-size: 28px;
+        margin: 0;
+    }
+
+    .menu-hamburguer {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 8px;
+    }
+
+    .botões {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #F2F0EF;
+        padding: 16px;
+        gap: 8px;
+        margin: 0;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        z-index: 100;
+    }
+
+    .botões.aberto {
+        display: flex;
+    }
+
+    .NavBotao {
+        padding: 12px 8px;
+        border-bottom: 1px solid #e0e0e0;
+        display: block;
+    }
+
+    .quiz {
+        margin-top: 8px;
+        text-align: center;
+        padding: 12px;
+        display: block;
+    }
+
+    /* Quiz */
+    .app {
+        margin: 40px auto;
+        width: 90%;
+        padding: 32px 0 60px 0;
+    }
+
+    /* Footer */
+    .container-footer {
+        flex-direction: column;
+        padding: 24px 16px;
+        gap: 24px;
+        width: 100%;
+    }
+
+    .icone-footer {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+    }
+
+    .navegacao-footer {
+        width: 100%;
+        height: auto;
+    }
+
+    .links {
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+    }
 }

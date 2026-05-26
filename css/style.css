@@ -1,38 +1,49 @@
 * {
     margin: 0;
+    box-sizing: border-box;
 }
 
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+/* =====================
+   HEADER — desktop
+===================== */
 header {
-    overflow: hidden;
     background-color: #F2F0EF;
     height: 100px;
     width: 100%;
-
+    overflow: visible; /* era hidden, impedia o dropdown de aparecer */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    position: relative;
 }
 
 .titulo {
-    margin-left: 200px;
-    margin-top: 15px;
     color: #1a3c2a;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 55px;
-
+    margin: 0;
 }
 
 .botões {
-    margin-left: 75%;
-    margin-top: -35px;
-
+    display: flex;
+    align-items: center;
+    gap: 4px;
 }
 
-.NavBotao{
+.NavBotao {
     padding: 10px;
     color: #1a3c2a;
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
 }
 
- .NavBotao:hover {
+.NavBotao:hover {
     color: #F2F0EF;
     background-color: #6fcf97;
     border-radius: 10px;
@@ -48,6 +59,14 @@ header {
     text-decoration: none;
 }
 
+/* Hamburguer escondido no desktop */
+.menu-hamburguer {
+    display: none;
+}
+
+/* =====================
+   HERO
+===================== */
 .hero {
     position: relative;
     height: 500px;
@@ -55,6 +74,7 @@ header {
     display: flex;
     align-items: center;
     padding: 40px;
+    z-index: 0;
 }
 
 .overlay {
@@ -89,6 +109,7 @@ header {
     margin-right: 10px;
     vertical-align: middle;
 }
+
 .hero h2 {
     font-size: 40px;
     margin-bottom: 10px;
@@ -100,9 +121,11 @@ header {
     line-height: 1.5;
     color: #ffffff;
 }
+
 .buttons {
     margin-top: 20px;
 }
+
 .btn {
     padding: 12px 20px;
     border: none;
@@ -110,6 +133,7 @@ header {
     margin-right: 10px;
     cursor: pointer;
 }
+
 .btn-green {
     background-color: #143021;
     color: white;
@@ -117,28 +141,29 @@ header {
 }
 
 .btn-outline {
-   background-color: #143021;
+    background-color: #143021;
     color: white;
     border: 1px solid #143021;
 }
+
 .btn-green:hover {
-    background-color: #2ecc71; 
+    background-color: #2ecc71;
     color: black;
-   
 }
 
-/* O efeito hover para o botão vazado (outline) */
 .btn-outline:hover {
-    background-color: #2ecc71; /* Preenche o fundo com verde claro */
-    border-color: #2ecc71;     /* Faz a borda acompanhar a cor do fundo */
-    color: #1a3c2a;            /* Escurece o texto para dar contraste */
+    background-color: #2ecc71;
+    border-color: #2ecc71;
+    color: #1a3c2a;
 }
 
+/* =====================
+   RODAPÉ DE STATS
+===================== */
 .rodape {
     background-color: #1a3c2a;
     display: flex;
     padding: 30px;
-
 }
 
 h3 {
@@ -150,7 +175,6 @@ h3 {
     font-size: 13px;
     font-family: 'Inter';
     color: #fff;
-
 }
 
 .informacoesderodape {
@@ -160,11 +184,45 @@ h3 {
     text-align: center;
 }
 
+/* =====================
+   SOBRE
+===================== */
+.sobre {
+    display: flex;
+    width: 100%;
+    height: 575px;
+    justify-content: center;
+}
+
 .sobre h2 {
     color: #1a3c2a;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 32px;
+}
 
+.container-sobre {
+    display: flex;
+    width: 1152px;
+    height: 415px;
+    margin-top: 80px;
+    gap: 64px;
+}
+
+.arvore {
+    width: 544px;
+    height: 416px;
+    position: relative;
+}
+
+.arvore img {
+    width: 100%;
+    height: 100%;
+}
+
+.teste2 {
+    width: 544px;
+    height: 416px;
+    line-height: 29px;
 }
 
 .tag2 {
@@ -187,6 +245,77 @@ h3 {
     vertical-align: middle;
 }
 
+.div-img {
+    position: absolute;
+    top: 357px;
+    left: -16px;
+    width: 208px;
+    height: 84px;
+    background-color: #1A3C2A;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.div-img h1 {
+    color: #6FCF97;
+    margin-left: 10px;
+}
+
+.div-img p {
+    color: #889e93;
+    margin-left: 10px;
+}
+
+.icone-img {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+
+.btn-historico {
+    position: relative;
+    display: inline-block;
+    padding: 12px 24px;
+    border: 2px solid #1a3c2a;
+    background-color: white;
+    color: #1a3c2a;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 1;
+    transition: color 0.4s ease;
+    margin-top: 5px;
+}
+
+.btn-historico::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #1a3c2a;
+    z-index: -1;
+    transition: width 0.4s ease;
+}
+
+.btn-historico:hover::before {
+    width: 100%;
+}
+
+.btn-historico:hover {
+    color: white;
+}
+
+/* =====================
+   DESTAQUES / DIMENSOES
+===================== */
 .destaques {
     display: inline-block;
     color: #7ee0b5;
@@ -223,7 +352,14 @@ h3 {
     width: 100%;
     display: flex;
     justify-content: center;
-    
+    position: relative;
+    z-index: 1;
+}
+
+.teste3 {
+    text-align: center;
+    width: 1152px;
+    margin-top: 80px;
 }
 
 .teste3 h2 {
@@ -234,25 +370,6 @@ h3 {
     line-height: 42px;
 }
 
-.teste3 {
-    justify-content: center;
-    text-align: center;
-    width: 1152px;
-    margin-top: 80px;
-    
-}
-
-.container-layout img {
-    width: 366px;
-    height: 192px;
-}
-
-.container-layout {
-    width: 368px;
-    border-radius: 4px;
-    border: 1px solid #f3f4f6;
-    padding: 118.8px;
-}
 .card {
     width: 368px;
     height: 470px;
@@ -267,17 +384,16 @@ h3 {
     margin-top: 48px;
 }
 
-.card-img img{
+.card-img img {
     height: 100%;
     width: 100%;
-    
 }
 
 .card p {
     margin-top: 12px;
 }
 
-.card h3{
+.card h3 {
     margin-top: 60px;
 }
 
@@ -301,44 +417,45 @@ h3 {
 .conteudocard h3 {
     width: 178px;
     height: 26px;
-    padding: -2px;
     color: #1a3c2a;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16.8px;
     line-height: 25.2px;
 }
 
-.margem{
+/* =====================
+   QUIZ CTA
+===================== */
+.margem {
     display: flex;
     height: 210px;
     align-items: center;
     justify-content: center;
 }
 
-.conhecimento{
-  width: 896px;
-  height: 80px;
-  display: flex;
-
+.conhecimento {
+    width: 896px;
+    height: 80px;
+    display: flex;
 }
 
-.testecon{
+.testecon {
     color: #1a3c2a;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
     margin-left: 20px;
     margin-right: 32px;
     width: 640px;
-   
 }
 
-.testecon p{
+.testecon p {
     color: #6a7282;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     line-height: 24.5px;
 }
-.btn-btn-quiz{
+
+.btn-btn-quiz {
     background-color: #1a3c2a;
     border: 1px solid #1a3c2a;
     color: #ffffff;
@@ -348,7 +465,10 @@ h3 {
     cursor: pointer;
 }
 
-.container-footer{
+/* =====================
+   FOOTER
+===================== */
+.container-footer {
     display: flex;
     justify-content: space-between;
     padding: 16px 0;
@@ -356,177 +476,343 @@ h3 {
     height: 100%;
     margin: 0 auto;
     gap: 40px;
-
 }
-.icone-footer h2{
+
+.icone-footer h2 {
     color: #fff;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 19px;
 }
-.icone-footer p{
-    color:#889e93;
+
+.icone-footer p {
+    color: #889e93;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
     line-height: 26px;
 }
-.icone-footer{
+
+.icone-footer {
     width: 532px;
     height: 223px;
     margin-left: 212px;
 }
-.navegacao-footer h2{
-    color: #fff;
-   font-family: Arial, Helvetica, sans-serif;
-   font-size: 16px;
-   margin-bottom: 8px;
-}
-.navegacao-footer a{
-    color: #889e93;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    text-decoration: none;
-}
-.navegacao-footer li{
-    list-style: none;
-   margin-bottom: 8px;
-   padding: 4px;
-}
-.navegacao-footer{
-    width: 246px;
-    height: 223px;
-}
-.links h2{
+
+.navegacao-footer h2 {
     color: #fff;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     margin-bottom: 8px;
 }
-.links a{
+
+.navegacao-footer a {
     color: #889e93;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
     text-decoration: none;
 }
-.links li{
+
+.navegacao-footer li {
     list-style: none;
     margin-bottom: 8px;
     padding: 4px;
 }
-.links{
+
+.navegacao-footer {
+    width: 246px;
+    height: 223px;
+}
+
+.links h2 {
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.links a {
+    color: #889e93;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.links li {
+    list-style: none;
+    margin-bottom: 8px;
+    padding: 4px;
+}
+
+.links {
     margin-right: 198px;
     width: 246px;
     height: 223px;
 }
 
-.div-img{
-  position: absolute;
-  top: 357px;          /* Alinha ao topo */
-  left: -16px;         /* Alinha à esquerda */
-  width: 208px;     /* Cobre toda a largura */
-  height: 84px;    /* Cobre toda a altura */
-  
-  /* Estilo visual */
-  background-color: #1A3C2A; /* Preto com 50% de transparência */
-  color: white;
-  display: flex;
-  justify-content: center; /* Centraliza o texto horizontalmente */
-  align-items: start;     /* Centraliza o texto verticalmente */
-  flex-direction: column;
+/* =====================
+   HAMBURGUER — estilos base
+   (ficam fora do media query
+   para funcionar quando ativados)
+===================== */
+.menu-hamburguer span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #1a3c2a;
+    border-radius: 3px;
+    transition: all 0.3s ease;
 }
 
-.div-img h1{
-    color: #6FCF97;
-    margin-left: 10px;
+.menu-hamburguer.ativo span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
 }
 
-.div-img p{
-    color: #889e93;
-    margin-left: 10px;
+.menu-hamburguer.ativo span:nth-child(2) {
+    opacity: 0;
 }
 
-.sobre {
-    display: flex;
-    width: 100%;
-    height: 575px;
-    justify-content: center;
-    
+.menu-hamburguer.ativo span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
 }
 
-.container-sobre{
-    display: flex;
-    width: 1152px;
-    height: 415px;
-    margin-top: 80px;
-    gap: 64px;
-}
+/* =====================
+   MEDIA QUERY — MOBILE
+===================== */
+@media screen and (max-width: 1200px) {
 
-.arvore {
-    width: 544px;
-    height: 416px;
-    position: relative;
-    
-}
+    /* Header */
+    header {
+        padding: 12px 16px;
+        height: auto;
+    }
 
-.teste2 {
-    width: 544px;
-    height: 416px;
-    line-height: 29px;
-}
+    .titulo {
+        font-size: 28px;
+        margin: 0;
+    }
 
-.arvore img {
-    width: 100%;
-    height: 100%;
-   
-}
+    /* Mostra o botão hamburguer */
+    .menu-hamburguer {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 8px;
+    }
 
-.btn-historico {
-    background: transparent;
-    border: 1px solid #1a3c2a;
-    color: #1a3c2a;
-}
+    /* Esconde o nav e vira dropdown */
+    .botões {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #F2F0EF;
+        padding: 16px;
+        gap: 8px;
+        margin: 0;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        z-index: 100;
+    }
 
-.icone-img{
-    display: flex;
-    gap: 10px;
-    margin-bottom: 10px;
-    margin-top: 15px;
-}
+    /* Quando clicado, abre */
+    .botões.aberto {
+        display: flex;
+    }
 
+    .NavBotao {
+        padding: 12px 8px;
+        border-bottom: 1px solid #e0e0e0;
+        display: block;
+    }
 
+    .quiz {
+        margin-top: 8px;
+        text-align: center;
+        padding: 12px;
+        display: block;
+    }
 
-.btn-historico {
-    position: relative;        
-    display: inline-block;
-    padding: 12px 24px;
-    border: 2px solid #1a3c2a; 
-    background-color: white;   
-    color: #1a3c2a;            
-    text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    cursor: pointer;
-    overflow: hidden;          
-    z-index: 1;                
-    transition: color 0.4s ease; 
-    margin-top: 5px;
-}
+    /* Geral */
+    main {
+        width: 100%;
+    }
 
-.btn-historico::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;                 
-    height: 100%;
-    background-color: #1a3c2a; 
-    z-index: -1;               
-    transition: width 0.4s ease; 
-}
+    section {
+        width: 100%;
+    }
 
-.btn-historico:hover::before {
-    width: 100%;              
-}
+    /* Hero */
+    .hero {
+        padding: 16px;
+        height: auto;
+        min-height: 300px;
+    }
 
-.btn-historico:hover {
-    color: white;              
+    .hero-content {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .hero h2 {
+        font-size: 26px;
+    }
+
+    .tag::before {
+        width: 20px;
+    }
+
+    /* Stats rodapé */
+    .rodape {
+        padding: 12px;
+        flex-wrap: wrap;
+    }
+
+    h3 {
+        font-size: 22px;
+    }
+
+    .teste {
+        font-size: 11px;
+    }
+
+    .informacoesderodape {
+        width: auto;
+        flex: 1 1 80px;
+        padding: 8px 4px;
+    }
+
+    /* Sobre */
+    .sobre {
+        height: auto;
+        padding: 32px 0;
+    }
+
+    .sobre h2 {
+        font-size: 20px;
+    }
+
+    .sobre p {
+        font-size: 15px;
+        text-align: justify;
+    }
+
+    .container-sobre {
+        width: 100%;
+        height: auto;
+        margin-top: 24px;
+        gap: 24px;
+        flex-direction: column;
+        padding: 0 16px;
+    }
+
+    .arvore {
+        width: 100%;
+        height: auto;
+    }
+
+    .arvore img {
+        width: 100%;
+        height: auto;
+    }
+
+    .div-img {
+        display: none;
+    }
+
+    .teste2 {
+        width: 100%;
+        height: auto;
+        line-height: 26px;
+    }
+
+    /* Dimensões */
+    .dimensoes {
+        height: auto;
+        padding: 40px 16px;
+    }
+
+    .teste3 {
+        width: 100%;
+        padding: 0 16px;
+        margin-top: 32px;
+    }
+
+    .teste3 h2 {
+        font-size: 22px;
+        line-height: 1.4;
+    }
+
+    .carrossel {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 360px;
+        height: auto;
+    }
+
+    .card-img {
+        width: 100%;
+        height: 180px;
+        margin-top: 0;
+    }
+
+    .card h3 {
+        margin-top: 12px;
+    }
+
+    .conteudocard h3 {
+        width: auto;
+        height: auto;
+    }
+
+    /* Quiz CTA */
+    .margem {
+        height: auto;
+        padding: 32px 16px;
+    }
+
+    .conhecimento {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        gap: 16px;
+        padding: 0;
+    }
+
+    .testecon {
+        width: 100%;
+        margin: 0;
+    }
+
+    /* Footer */
+    .container-footer {
+        flex-direction: column;
+        padding: 24px 16px;
+        gap: 24px;
+        width: 100%;
+    }
+
+    .icone-footer {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+    }
+
+    .navegacao-footer {
+        width: 100%;
+        height: auto;
+    }
+
+    .links {
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+    }
 }
