@@ -177,6 +177,7 @@ header {
 .hero-content {
    width: 768px;
    font-family: Arial, Helvetica, sans-serif;
+   z-index: 2;
 }
 
 .tag {
@@ -253,6 +254,8 @@ header {
     height: 122px;
     margin-bottom: 32px;
     gap: 32px;
+    justify-content: center;
+    
 }
 
 
@@ -272,26 +275,41 @@ header {
 .ponto{
  border-left: 1px solid #6FCF97;
  height: 155px;
+ margin-left: -6px;
+ background: url('../img/Icone_Sobre.png') no-repeat;
+ background-size: 12px 12px;
+ width: 24px;
+background-position-x: 10px;
 
 }
 
 .ponto1{
  border-left: 1px solid #6FCF97;
- height: 155px;
- margin-left: 3.1%;
-
+ margin-left: 3%;
+ background: url('../img/Icone_Sobre.png') no-repeat;
+ background-size: 12px 12px;
+ width: 24px;
+height: 155px;
+background-position-x: 10px;
 }
 
 .ponto4{
  border-left: 1px solid #6FCF97;
- height: 155px;
- margin-left: 3.1%;
+ margin-left: 3%;
+ background: url('../img/Icone_Sobre.png') no-repeat;
+ background-size: 12px 12px;
+ width: 24px;
+height: 155px;
+background-position-x: 10px;
  
 }
 .ponto5{
  border-left: 1px solid #6FCF97;
- height: 122px;
- margin-left: 3.1%;
+ margin-left: 3%;
+ background: url('../img/Icone_Sobre.png') no-repeat;
+ background-size: 12px 12px;
+ width: 24px;
+ background-position-x: 10px;
 }
 
 .container-acoes-curso{
@@ -529,4 +547,37 @@ font-size: 15px;
     background: url('../img/Sobre.png') center/cover no-repeat;
     display: flex;
     align-items: center;
+}
+
+.linha-caixa{
+    background: #fff;
+    width: 884px;
+    height: 122px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+}
+
+.linha-caixa > span{
+    margin-top: 21px;
+    margin-left: 21px;
+    font-weight: bold;
+}
+
+.linha-caixa > p{
+    margin-left: 21px;
+}
+
+.ano{
+  margin-right: -36px;
+  margin-left: 36px;
+}
+.areas-caixas  img{
+    width: 28px;  
+    height: 28px; 
+    object-fit: contain; 
+    margin-right: 16px;  
+     
 }
