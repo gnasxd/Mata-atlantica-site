@@ -361,3 +361,26 @@ header {
         margin-right: 0;
     }
 }
+.explicacao {
+    background-color: #f0f7f0;
+    border-left: 4px solid #2d6a4f;
+    border-radius: 6px;
+    padding: 12px 16px;
+    margin-top: 16px;
+    font-size: 0.95rem;
+    color: #1b4332;
+}
+
+.explicacao strong {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.explicacao p {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}

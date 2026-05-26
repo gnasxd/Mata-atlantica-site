@@ -8,13 +8,13 @@ const questions = [
             { id: 4, resposta: "5%", correct: false }
         ],
     },
- {
+    {
         question: "Quantos estados brasileiros a Mata Atlântica abrange?",
         respostas: [
             { id: 1, resposta: "10", correct: false },
             { id: 2, resposta: "13", correct: false },
             { id: 3, resposta: "15", correct: false },
-            { id: 4, resposta: "17", correct: true }    
+            { id: 4, resposta: "17", correct: true }
         ],
     },
     {
@@ -132,7 +132,7 @@ function selectAnswer(e) {
     const selectedButton = e.target;
     const isCorrect = selectedButton.dataset.id == correctAnswer.id;
 
-    if (isCorrect){
+    if (isCorrect) {
         selectedButton.classList.add("correct")
         score++;
     }
@@ -144,16 +144,15 @@ function selectAnswer(e) {
             button.classList.add("correct");
         }
         button.disabled = true;
-        const explicacao = document.createElement("p");
-        explicacao.classList.add("explicacao");
-        if (isCorrect) {
-            explicacao.innerHTML = "Resposta correta!";
-        } else {
-            explicacao.innerHTML = "Resposta incorreta! A resposta correta é: " + correctAnswer.resposta;
-        }
-        answerButtons.appendChild(explicacao);
     });
-
+    const explicacao = document.createElement("div");
+    explicacao.classList.add("explicacao");
+    if (isCorrect) {
+        explicacao.innerHTML = `<strong>✅ Resposta correta!</strong><p>${correctAnswer.resposta}</p>`;
+    } else {
+        explicacao.innerHTML = `<strong>❌ Resposta incorreta!</strong><p>A resposta correta é: ${correctAnswer.resposta}</p>`;
+    }
+    answerButtons.appendChild(explicacao);
 
     nextButton.style.display = "block";
 }
@@ -165,16 +164,16 @@ function showScore() {
 }
 function handleNextButton() {
     currentQuestionIndex++;
-    if (currentQuestionIndex < questions.length){
+    if (currentQuestionIndex < questions.length) {
         showQuestion();
-    }else{
+    } else {
         showScore();
     }
 }
 nextButton.addEventListener("click", () => {
     if (currentQuestionIndex < questions.length) {
-       handleNextButton();
-    }else {
+        handleNextButton();
+    } else {
         startQuiz();
     }
 })
