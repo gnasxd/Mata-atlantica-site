@@ -122,10 +122,6 @@ header {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.btn-quiz1:hover {
-    background: #cdf8e1;
-    color: #1a3c2a;
-}
 
 .btn-quiz1:disabled {
     cursor: no-drop;
@@ -271,9 +267,6 @@ header {
     height: 223px;
 }
 
-/* =====================
-   MEDIA QUERY — MOBILE
-===================== */
 @media screen and (max-width: 1200px) {
 
     /* Header */
