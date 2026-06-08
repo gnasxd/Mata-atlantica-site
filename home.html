@@ -11,13 +11,17 @@
 <body>
     <header>
         <h1 class="titulo">Mata Atlântica</h1>
-        <Div class="botões">
-            <ul>
-                <a class="NavBotao" href="home.html">Início</a>
-                <a class="NavBotao" href="sobre.html">sobre</a>
-                <a class="quiz" href="quiz.html">QUIZ</a>
-            </ul>
-        </Div>
+        <button class="menu-hamburguer" id="menuBtn" aria-label="Abrir menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <div class="botões" id="menuNav">
+            <a class="NavBotao" href="home.html">Início</a>
+            <a class="NavBotao" href="sobre.html">sobre</a>
+            <a class="quiz" href="quiz.html">QUIZ</a>
+        </div>
     </header>
     <main>
         <section class="hero">
@@ -188,6 +192,14 @@
             </div>
         </div>
     </footer>
+    <script>
+        const btn = document.getElementById('menuBtn');
+        const nav = document.getElementById('menuNav');
+        btn.addEventListener('click', () => {
+            btn.classList.toggle('ativo');
+            nav.classList.toggle('aberto');
+        });
+    </script>
 </body>
 
 </html>
